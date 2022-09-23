@@ -19,7 +19,7 @@
   <body>
     <div class="todo-container">
       <header>
-        <h1>ToDo List Avançado</h1>
+        <h1>Lista de Tarefas</h1>
       </header>
 
       <form id="todo-form">
@@ -36,7 +36,7 @@
         </div>
       </form>
 
-      <form id="edit-form">
+      <form id="edit-form" class="hide">
         <p>Edite sua tarefa:</p>
         <div class="form-control">
           <input type="text" id="edit-input" />
@@ -44,7 +44,7 @@
             <i class="fa-solid fa-check-double"></i>
           </button>
         </div>
-        <button id="idcancel-edit-btn">Cancelar</button>
+        <button id="cancel-edit-btn">Cancelar</button>
       </form>
 
       <div id="toolbar">
@@ -67,8 +67,9 @@
           </select>
         </div>
       </div>
+
       <div id="todo-list">
-        <div class="todo">
+        <div class="todo done">
           <h3>Estou fazendo alguma coisa</h3>
           <button class="finish-todo">
             <i class="fa-solid fa-check"></i>
@@ -76,12 +77,12 @@
           <button class="edit-todo">
             <i class="fa-solid fa-pen"></i>
           </button>
-          <button class="reomve-todo">
+          <button class="remove-todo">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
 
-        <div class="todo">
+        <div class="todo ">
           <h3>Estudar JavaScript</h3>
           <button class="finish-todo">
             <i class="fa-solid fa-check"></i>
@@ -89,11 +90,10 @@
           <button class="edit-todo">
             <i class="fa-solid fa-pen"></i>
           </button>
-          <button class="reomve-todo">
+          <button class="remove-todo">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
-
       </div>
     </div>
   </body>
