@@ -56,7 +56,7 @@ select {
 /* Todo header */
 
 .todo-container {
-  width: 450px;
+  max-width: 450px;
   background-color: #fdfdfd;
   padding: 1.5rem;
   border-radius: 15px;
@@ -69,6 +69,10 @@ select {
 }
 
 /* Todo form */
+
+#todo-form input {
+  width: 100%;
+}
 
 #todo-form,
 #edit-form {
@@ -137,7 +141,7 @@ select {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  padding: .5rem;
   border-bottom: 1px solid #ddd;
   transition: .3s;
 }
