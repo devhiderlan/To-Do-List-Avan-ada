@@ -96,7 +96,7 @@ cancelEditBtn.addEventListener('click', e => {
   toggleForms()
 })
 
-editForm.addEventListener('click', e => {
+editForm.addEventListener('submit', e => {
   e.preventDefault()
 
   const editInputValue = editInput.value
