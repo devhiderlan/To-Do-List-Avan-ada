@@ -4,33 +4,47 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Helvetica, sans-serif;
-  color: #333;
+  font-family: Helvetica, sans-serif;
+  color: #7c8798;
 }
 
 body {
-  background-color:rgb(213, 208, 217);
+  background-color: rgb(5, 5, 27);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+input,
+select {
+  border: 1px solid #93cd20;
+  border-radius: 20px;
+  background-color: transparent;
+  padding: 0.25rem 1rem;
+}
+
+::placeholder {
+  color: #7c8798;
+}
+
 button {
-  background-color: #fdfdfd;
-  color: #102f5e;
-  border: 2px solid #102f5e;
-  padding: .3rem .6rem;
+  width: 40px;
+  height: 40px;
+  background-color: #93cd20;
+  color: white;
+  border-radius: 50%;
+  padding: 0.6rem 0.6rem;
   font-size: 1rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .4s; 
+  transition: 0.4s;
 }
 
 button:hover {
-  background-color: #102f5e;
+  background-color: #7c8798;
   color: #fdfdfd;
 }
 
@@ -39,14 +53,9 @@ button:hover > i {
 }
 
 button i {
-  color: #102f5e;
+  color: black;
   font-weight: bold;
   pointer-events: none;
-}
-
-input,
-select {
-  padding: 0.25rem .5rem;
 }
 
 .hide {
@@ -57,7 +66,7 @@ select {
 
 .todo-container {
   max-width: 450px;
-  background-color: #fdfdfd;
+  background-color: #252d37;
   padding: 1.5rem;
   border-radius: 15px;
 }
@@ -65,12 +74,13 @@ select {
 .todo-container header {
   text-align: center;
   padding: 0 1rem 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #93cd20;
 }
 
 /* Todo form */
 
-#todo-form input {
+#todo-form input,
+#edit-form input {
   width: 100%;
 }
 
@@ -81,7 +91,7 @@ select {
 
 #todo-form p,
 #edit-form p {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
 }
 
@@ -89,26 +99,35 @@ select {
   display: flex;
 }
 .form-control input {
-  margin-right: .3rem;
+  margin-right: 0.3rem;
 }
 #cancel-edit-btn {
   margin-top: 1rem;
+  border-radius: 20px;
+  width: 100px;
+  height: 40px;
+  color: black;
+  font-weight: 500;
+}
+
+#cancel-edit-btn:hover {
+  color: white;
 }
 
 /* Toolbar */
 
 #toolbar {
   padding: 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #93cd20;
   display: flex;
 }
 
 #toolbar h4 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 #search {
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #93cd20;
   padding-right: 1rem;
   margin-right: 1rem;
   width: 65%;
@@ -122,7 +141,7 @@ select {
 
 #search input {
   width: 100%;
-  margin-right: .3rem;
+  margin-right: 0.3rem;
 }
 
 #filter {
@@ -141,26 +160,23 @@ select {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: .5rem;
-  border-bottom: 1px solid #ddd;
-  transition: .3s;
+  padding: 0.5rem;
+  border-bottom: 1px solid #93cd20;
+  transition: 0.3s;
+  border-radius: 20px;
 }
 
 .todo h3 {
   flex: 1;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .todo button {
-  margin-left: .4rem;
-}
-
-.done {
-  background-color: #395169;
+  margin-left: 0.4rem;
 }
 
 .done h3 {
-  color: white;
+  color: #6f6c6c;
   text-decoration: line-through;
   font-style: italic;
 }
