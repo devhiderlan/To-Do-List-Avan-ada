@@ -1,19 +1,23 @@
-# To-Do-List-Avancada
+# To-Do List Avançada.
 ## Visão Geral
 
-### Projeto de um componente interativo para avaliação de qualidade de serviço/atendimento prestado.
+### Projeto de uma aplicação de lista de tarefas interativa, onde você consegue adicionar suas tarefas diárias de forma prática e bem intuitiva. 
 #
 
-![](./Assets/design/desktop-preview.jpg)
+![](./Assets/images/todo-avancada.png)
 
 
 ## Construido com:
-- HTML
-- CSS
+- HTML Semântico
+- CSS Default
 - JavaScript
 
 ## Funcionalidades
-- Card interativo para avaliação de qualidade de serviços/atendimento prestados
+- Adicionar quantas tarefas quiser.
+- Botões dedicados de: Finalizar tarefa; Editar e excluir;
+- Campo de pesquisa de tarefas.
+- Filtro de tarefas: Feitas; À fazer; e Todas as tarefas;
+
 
 ## O que eu aprendi:
 - Manipulação do DOM com:
@@ -34,7 +38,7 @@
 
 ## Link
 
-Veja o projeto aqui: 
+Veja o projeto aqui: [Acessar🌍](https://devhiderlan.github.io/To-Do-List-Avancada/)
 
 ## Autor
 
